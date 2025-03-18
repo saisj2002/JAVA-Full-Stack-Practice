@@ -43,6 +43,11 @@ class FH {
         }
     }
 
+    void readFile(){
+        Reader r = new Reader("StudentNames.txt");
+        
+    }
+
     void choice(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your choice: ");
@@ -51,7 +56,7 @@ class FH {
             case 1:
                 createFile();
                 break;
-            case 2:
+            case 2: 
                 writeFile();
                 break;
             default:
