@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-class CH {
+class FH {
     void writeFile(){
         try {
             FileWriter writer = new FileWriter("StudentNames.txt");
@@ -15,7 +15,7 @@ class CH {
     }
 
     void createFile(){
-        File c = new File("D://CODE//JAVA cull Stack//StudentNames.txt");
+        File c = new File("D://CODE//JAVA Full Stack//StudentNames.txt");
         try {
             if (c.createNewFile()) {
                 System.out.println("File created successcully...");
@@ -45,13 +45,22 @@ class CH {
 
     void choice(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your choice: ");
+        System.out.print("Enter your choice: ");
         int x = sc.nextInt();
-        
+        switch (x) {
+            case 1:
+                createFile();
+                break;
+            case 2:
+                writeFile();
+                break;
+            default:
+                break;
+        }
         sc.close();
     }
     public static void main(String Args[]) {
-        CH objCH = new CH();
+        FH objCH = new FH();
         objCH.choice();
     }
 }
