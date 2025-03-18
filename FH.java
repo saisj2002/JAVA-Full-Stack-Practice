@@ -43,10 +43,11 @@ class FH {
         }
     }
 
-    void readFile(){
-        Reader r = new Reader("StudentNames.txt");
+    // void readFile(){
+    //     Reader r = new Reader("StudentNames.txt");
+    //     r.Re
         
-    }
+    // }
 
     void choice(){
         Scanner sc = new Scanner(System.in);
