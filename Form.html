@@ -9,16 +9,17 @@
     <h3>Form</h3>
     <hr>
     <form>
-        <label>Username: </label><input type="text" name="" id=""><br><br>
-        <label>Email: </label><input type="email" name="" id=""><br><br>
-        <label>Password: </label><input type="password" name="" id=""><br><br>
-        <label>Mobile Number: </label><input type="tel" name="" id=""><br><br>
-        <label>Age: </label><input type="number" name="" id=""><br><br>
+        <label>Username: </label><input type="text"><br><br>
+        <label>Email: </label><input type="email"><br><br>
+        <label>Password: </label><input type="password" min="8" max="10"><br><br>
+        <label>Mobile Number: </label><input type="tel" min="10" max="10"><br><br>
+        <label>Age: </label><input type="number" min="18" max="30"><br><br>
         <label>Languages: </label><input type="checkbox" name="Languages" id="Languages">MARATHI
                                   <input type="checkbox" name="Languages" id="Languages">HINDI
                                   <input type="checkbox" name="Languages" id="Languages">ENGLISH
                                   <br><br>
-        <label>Gender: </label><input type="radio" name="gender" id="gender">Male<input type="radio" name="gender" id="gender"><br><br>
+        <label>Gender: </label><input type="radio" name="gender" id="gender">Male
+                               <input type="radio" name="gender" id="gender">Female<br><br>
         <label>Feedback: </label><textarea name="" id=""></textarea><br><br>
         <button type="button">Submit</button>
     </form>
