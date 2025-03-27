@@ -1,0 +1,19 @@
+
+        table, td, th, tr{
+            /* border: 1px solid black; */
+            background-color: rgb(194, 172, 215);
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        #btnn {
+            background-color: #da963d;
+            border: none;
+            color: rgb(236, 32, 32) !important;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }

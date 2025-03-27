@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Web Technologies/stylesheet.css">
+    <style>
+        #btnn{
+            background-color: rgb(43, 202, 226);
+            border-radius: 5px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;">Forms</h3>
+    <hr>
+    <form action="">
+        <label>Username: </label><input type="text" name="username" placeholder="Enter your name here"><br><br>
+        <label>Email ID: </label><input type="email" name="email" placeholder="Enter your email id here"><br><br>
+        <label>Age: </label><input type="number" name="age" placeholder="Enter your age here"><br><br>
+        <label>Address: </label><textarea rows="1"></textarea><br><br>
+        <label>Password: </label><input type="password" name="password" placeholder="At least 8 characters"><br><br>
+        <label>Confirm Password: </label><input type="password" name="password" placeholder="Same as password"><br><br>
+        <label>Gender: </label><input type="radio" name="gender">Male<input type="radio" name="gender">Female<br><br>
+
+        <label>Language: </label>
+        <select name="language" id="language">
+            <option value="Marathi">Marathi</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+        </select>
+
+        <br><br>
+
+        <label for="languages">State: </label>
+        <input type="text" list="languages">
+        <datalist id="languages">
+            <option value="Marathi">Marathi</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+        </datalist>
+
+        <br><br>
+
+        <input type="button" value="Submit">
+        <hr>
+        <table>
+            <tr>
+            <td style="border-right: none;"><img src="Assets/College Logo.png" width="30%" height="30%" alt=""></td>
+            <td style="font-size: larger;"><b>Zeal Institute of Business Administration, Computer Applications & Research<br>
+                (ZIBACAR)
+            </b></td>
+            <td><img src="Assets/College Logo.png" width="30%" height="30%" alt=""></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><br><input type="text"></td>
+                <td style="border: 1px solid black;" rowspan="4">PHOTO</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><br><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><br><input type="tel" min="10" max="10"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><br><input type="number" min="18" max="30"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><br><input type="radio" name="gender">Male<input type="radio" name="gender">Female</td>
+            </tr>
+            <tr>
+                <td>Mentor: </td>
+                <td style="text-align: left;"><br>
+                    <input type="checkbox">Mr. Abhishek Shirke<br>
+                    <input type="checkbox">Mr. Sai Jawake<br>
+                    <input type="checkbox">Mr. Padmshree Shinde<br>
+                    <input type="checkbox">Mr. Aditya Dayma</td>
+            </tr>
+            <tr>
+                <td>Feedback:</td>
+                <td colspan="2"><br><textarea rows="5" maxlength="400"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3"><br><input type="button" value=" Submit " id="btnn" style="color: rgb(63, 205, 47);"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
