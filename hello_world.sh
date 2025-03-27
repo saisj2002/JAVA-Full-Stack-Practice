@@ -1,4 +1,2 @@
 #!/bin/bash
-git init
-git add .
-git commit -m "lecture commit"
+git commit -am "lecture commit"
