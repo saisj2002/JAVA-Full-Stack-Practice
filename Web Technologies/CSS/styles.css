@@ -1,0 +1,23 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.rectangle {
+    width: 200px;  /* Set width */
+    height: 100px; /* Set height */
+    background-color: green; /* Set color */
+}
