@@ -1,1 +1,1 @@
-+insert into TABLE student VALUES(101, Sai, 9623018194);
+insert into student VALUES(11, "Sai", 9628194);
