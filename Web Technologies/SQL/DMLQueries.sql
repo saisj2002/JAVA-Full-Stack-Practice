@@ -1,0 +1,1 @@
++insert into TABLE student VALUES(101, Sai, 9623018194);
