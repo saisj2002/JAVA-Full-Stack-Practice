@@ -34,26 +34,26 @@ console.log();
 
 // Element Operations
 console.log(data1.includes("sai"));
-console.log(data1.indexOf(33)+1);
-console.log(data1.lastIndexOf(33)+1);
+console.log(data1.indexOf(33) + 1);
+console.log(data1.lastIndexOf(33) + 1);
 
 console.log();
 
 // Splice
-console.log("Normal:",data1);
+console.log("Normal:", data1);
 data1.splice(2, 0, 101);
-console.log("Added 101 at second position:",data1);
+console.log("Added 101 at second position:", data1);
 data1.splice(1, 2, 1, 8);
-console.log("Added 1, 8 at 1st position and also\ndeleted 2 elements from 1st position:",data1);
+console.log("Added 1, 8 at 1st position and also deleted 2 elements from 1st position:", data1);
 
 console.log();
 
 // Slice
 console.log(data1);
-console.log(data1.slice(3,8));
+console.log(data1.slice(3, 8));
 data1.pop();
 console.log(data1);
-console.log(data1.slice(-5,-2));
+console.log(data1.slice(-5, -2));
 console.log(data1);
 console.log(data1.slice(-4));
 
@@ -61,16 +61,16 @@ console.log();
 
 // Loop
 console.log("ELEMENTS");
-for(let element of data1){
+for (let element of data1) {
     console.log(element);
 }
 console.log("INDEXES");
-for(let element in data1){
+for (let element in data1) {
     console.log(element);
 }
 console.log("INDEXES AND ELEMENTS");
-for(let element in data1){
-    console.log("  ",element, "   -    ", data1[element]);
+for (let element in data1) {
+    console.log("  ", element, "   -    ", data1[element]);
 }
 
 console.log();
@@ -82,7 +82,7 @@ console.log();
 
 // For Each
 console.log("Via forEach =");
-console.log("Index","Values");
+console.log("Index", "Values");
 data1.forEach((val, ind) => {
     console.log(`  ${ind}     ${val}`);
 });
@@ -91,7 +91,7 @@ console.log();
 
 // Map
 console.log("Via map =");
-console.log("Index","Values");
+console.log("Index", "Values");
 data1.map((val, ind) => {
     console.log(`  ${ind}     ${val}`);
 });
@@ -104,67 +104,35 @@ console.log(newArray);
 
 console.log();
 
-// Problem 1 = Find even Numbers from given array
+// Sorting Numbers
+let data3 = [67, 84, 23, 1, 4, 5, 90, 33, 22, 82, 40];
+let data4 = [67, 84, 23, 1, 4, 5, 90, 33, 22, 82, 40];
 
-let numbers = [1,2];
+let sortedArrayFromBiggerToSmaller = data3.sort((a, b) => b - a);
+let sortedArrayFromSmallerToBigger = data4.sort((a, b) => a - b);
 
-numbers.forEach((number)=>{
-    if(number%2==0){
-        console.log(number, "EVEN"); 
-    }else{
-        console.log(number, "ODD");
-    }
-});
+console.log("From Bigger to Smaller:", sortedArrayFromBiggerToSmaller);
+console.log("From Smaller to Bigger:", sortedArrayFromSmallerToBigger);
 
-console.log();
 
-for(let element in numbers){
-    if(numbers[element]%2==0){
-        console.log(numbers[element]);
-    }
-}
 
-console.log();
+// Sorting Strings
+let data5 = ["SAI", "SAMEER", "AKASH", "DIGVIJAY", "ADITYA", "ABHISHEK"];
+let data6 = ["SAI", "SAMEER", "AKASH", "DIGVIJAY", "ADITYA", "ABHISHEK"];
 
-let evenArray = numbers.filter((num)=>{
-    if (num%2 == 0) return num
-});
-console.log(evenArray);
-console.table([evenArray]);
+let StringsortedArrayFromBiggerToSmaller = data5.sort((a, b) => b.localeCompare(a));
+let StringsortedArrayFromSmallerToBigger = data6.sort((a, b) => a.localeCompare(b));
+
+console.log("From Bigger to Smaller:", StringsortedArrayFromBiggerToSmaller);
+console.log("From Smaller to Bigger:", StringsortedArrayFromSmallerToBigger);
+
 
 console.log();
 
 
-// Problem 2 = Find total of int array
-
-// let sumArray = numbers.map((sum)=>{
-//     let additionOfArray = add + sum; 
-//     return additionOfArray
-// });
-// console.log(sumArray);
-
-let sum = 0, total  =0;
-for(let element of numbers){
-    // let fv = element; 
-    // let sv = element+1;
-
-    sum = sum + element;
-    // total= total + sum
-    // fv++
-    // sv++
-
-}
-console.log(sum);
 
 
-// 1*1,2*1
-// let numbers = [1,2];
 
-let redu = numbers.reduce((pv, cv)=>{
-    return pv * cv
-},4);
-
-console.log(redu);
 
 
 
